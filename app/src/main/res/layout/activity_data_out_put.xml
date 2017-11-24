@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tiangong.chargingPile.activity.DataManagerActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:background="@color/ThemeColor"
+        android:layout_width="match_parent"
+        android:layout_height="117px">
+        <ImageView
+            android:padding="24px"
+            android:id="@+id/img_back"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_white"
+            android:layout_marginLeft="54px"
+            android:layout_width="117px"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:text="数据导出"
+            android:layout_centerInParent="true"
+            android:textSize="54px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/data_manager_edit"
+        android:layout_below="@+id/top_rl"
+        android:textSize="48px"
+        android:hint="搜索"
+        android:paddingLeft="48px"
+        android:background="@drawable/edit_text_backgroud"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_width="match_parent"
+        android:layout_height="96px" />
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_below="@+id/data_manager_edit"
+        android:layout_marginTop="54px"
+        android:layout_marginRight="60px"
+        android:layout_marginLeft="60px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="充电桩ID"
+            android:textSize="34px"
+            android:textColor="@color/color666"
+            android:layout_width="270px"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:layout_marginLeft="90px"
+            android:text="员工号码"
+            android:textSize="34px"
+            android:textColor="@color/color666"
+            android:layout_width="270px"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:layout_marginLeft="90px"
+            android:text="测试时间"
+            android:textSize="34px"
+            android:textColor="@color/color666"
+            android:layout_width="270px"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:layout_marginLeft="90px"
+            android:text="测试结果"
+            android:textSize="34px"
+            android:textColor="@color/color666"
+            android:layout_width="270px"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:layout_marginLeft="90px"
+            android:text="备注"
+            android:textSize="34px"
+            android:textColor="@color/color666"
+            android:layout_width="270px"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ListView
+        android:divider="@null"
+        android:id="@+id/data_output_listview"
+        android:layout_marginBottom="144px"
+        android:layout_marginTop="66px"
+        android:layout_below="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <LinearLayout
+        android:layout_marginRight="60px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36px"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="90px">
+        <Button
+
+            android:textColor="#FF8486"
+            android:textSize="@dimen/textSize36Px"
+            android:text="删除"
+            android:background="@drawable/button_red"
+            android:layout_width="180px"
+            android:layout_height="72px" />
+        <Button
+            android:layout_marginLeft="54px"
+            android:textSize="@dimen/textSize36Px"
+            android:textColor="@color/colorWhite"
+            android:text="同步云"
+            android:background="@drawable/one_key_test_start_background"
+            android:layout_width="180px"
+            android:layout_height="72px" />
+    </LinearLayout>
+</RelativeLayout>
+

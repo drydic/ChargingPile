@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="chargingPileMode"
+            type="com.tiangong.chargingPile.model.ChargingPaileData"/>
+    </data>
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="144px"
+            android:layout_marginRight="156px"
+            android:layout_marginLeft="156px"
+            android:layout_marginTop="96px"
+            android:layout_width="match_parent"
+            android:layout_height="636px">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ThemeColor">
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text1"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="39px"
+                        android:text="报文名称" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text2"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text1"
+                        android:layout_marginTop="54px"
+                        android:text="CHM" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text3"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text2"
+                        android:layout_marginTop="54px"
+                        android:text="BHM" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text4"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text3"
+                        android:layout_marginTop="54px"
+                        android:text="CRM" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text5"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text4"
+                        android:layout_marginTop="54px"
+                        android:text="BCP" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text6"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text5"
+                        android:layout_marginTop="54px"
+                        android:text="CTS" />
+                    <TextView
+
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text7"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text6"
+                        android:layout_marginTop="54px"
+                        android:text="CML" />
+                    <TextView
+
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text8"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text7"
+                        android:layout_marginTop="54px"
+                        android:text="BRO" />
+                    <TextView
+
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text9"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text8"
+                        android:layout_marginTop="54px"
+                        android:text="CRO" />
+                    <TextView
+
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text10"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text9"
+                        android:layout_marginTop="54px"
+                        android:text="BCL" />
+                    <TextView
+
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text11"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text10"
+                        android:layout_marginTop="54px"
+                        android:text="BST" />
+                    <TextView
+
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text12"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text11"
+                        android:layout_marginTop="54px"
+                        android:text="CST" />
+                    <TextView
+
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text13"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text12"
+                        android:layout_marginTop="54px"
+                        android:text="CSD" />
+                    <TextView
+                        android:layout_marginBottom="39px"
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/text14"
+                        style="@style/text_36px_white"
+                        android:layout_below="@+id/text13"
+                        android:layout_marginTop="54px"
+                        android:text="BSD" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/r2"
+                    android:layout_toRightOf="@id/r1"
+                    android:layout_width="506px"
+                    android:layout_height="match_parent"
+                    android:background="@color/smallBlue">
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/reportText"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:text="状态" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/CHMText"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CMLState}" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/BHMText"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.BHMState}" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/CRMText"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CRMState}" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        android:id="@+id/BCPText"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.BCPState}" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CTSState}" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CMLState}" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CTSState}" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CROState}" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="--" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.BSTState}" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CSDState}" />
+                    <TextView
+                        android:textColor="@color/color666"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CSDState}" />
+
+                    <TextView
+
+                        android:textColor="@color/color666"
+                        android:layout_marginBottom="39px"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.BSDState}" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:background="@color/ThemeColor"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/r2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="39px"
+                        android:text="内容" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CHMTestContent}" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.BHMTestContent}" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CRMTestContent}" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.BCPTestContent}" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CTSTestContent}" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CMLTestContent}" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.BROTestContent}" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CROTestContent}" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="获取中" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.BSTTestContent}" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CSTTestContent}" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.CSDTestContent}" />
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_marginBottom="39px"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="54px"
+                        android:text="@{chargingPileMode.BSDTestContent}" />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:background="@color/smallBlue"
+                    android:layout_toRightOf="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                    <TextView
+                        android:layout_marginBottom="39px"
+                        android:layout_marginLeft="18px"
+                        style="@style/text_36px_white"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:text="备注" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tiangong.chargingPile.activity.FaultSimulationActivity">
+
+
+    <RelativeLayout
+        android:background="@color/ThemeColor"
+        android:layout_width="match_parent"
+        android:layout_height="117px">
+        <ImageView
+            android:padding="24px"
+            android:id="@+id/img_back"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_white"
+            android:layout_marginLeft="54px"
+            android:layout_width="117px"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:text="故障模拟"
+            android:layout_centerInParent="true"
+            android:textSize="54px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="18px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_marginTop="60px"
+            android:id="@+id/fault_simulation_checkbox1"
+            android:layout_marginLeft="60px"
+            android:textColor="@color/color666"
+            android:paddingLeft="33px"
+            android:textSize="54px"
+            android:text="通信中断"
+            android:button="@drawable/checkbox_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_marginTop="60px"
+            android:id="@+id/fault_simulation_checkbox2"
+            android:layout_marginLeft="612px"
+            android:textColor="@color/color666"
+            android:paddingLeft="33px"
+            android:textSize="54px"
+            android:text="电压异常"
+            android:button="@drawable/checkbox_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_below="@+id/fault_simulation_checkbox1"
+            android:id="@+id/fault_simulation_checkbox3"
+            android:layout_alignLeft="@+id/fault_simulation_checkbox1"
+            android:textColor="@color/color666"
+            android:paddingLeft="33px"
+            android:textSize="54px"
+            android:text="绝缘故障"
+            android:layout_marginTop="60px"
+            android:button="@drawable/checkbox_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_below="@+id/fault_simulation_checkbox2"
+            android:id="@+id/fault_simulation_checkbox4"
+            android:layout_alignLeft="@+id/fault_simulation_checkbox2"
+            android:textColor="@color/color666"
+            android:paddingLeft="33px"
+            android:textSize="54px"
+            android:text="电流过大"
+            android:layout_marginTop="60px"
+            android:button="@drawable/checkbox_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_below="@+id/fault_simulation_checkbox3"
+            android:id="@+id/fault_simulation_checkbox5"
+            android:layout_alignLeft="@+id/fault_simulation_checkbox3"
+            android:textColor="@color/color666"
+            android:paddingLeft="33px"
+            android:textSize="54px"
+            android:text="车辆接口断开"
+            android:layout_marginTop="60px"
+            android:button="@drawable/checkbox_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_below="@+id/fault_simulation_checkbox4"
+            android:id="@+id/fault_simulation_checkbox6"
+            android:layout_alignLeft="@+id/fault_simulation_checkbox4"
+            android:textColor="@color/color666"
+            android:paddingLeft="33px"
+            android:textSize="54px"
+            android:text="电池故障"
+            android:layout_marginTop="60px"
+            android:button="@drawable/checkbox_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/fault_simulation_rele1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="105px"
+            android:layout_width="510px"
+            android:layout_height="600px">
+            <TextView
+                android:layout_marginTop="15px"
+                android:id="@+id/statusText"
+                android:layout_centerHorizontal="true"
+                android:textSize="44px"
+                android:text="状态：充电枪未接入"
+                android:textColor="@color/textColor666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/oneKeybuttonRl"
+                android:layout_marginTop="45px"
+                android:layout_below="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginLeft="54px"
+                    android:textSize="44px"
+                    android:textColor="@color/colorWhite"
+                    android:text="停止"
+                    android:background="@drawable/one_key_test_stop_background"
+                    android:layout_width="180px"
+                    android:layout_height="72px" />
+                <Button
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="54px"
+                    android:textSize="44px"
+                    android:textColor="@color/colorWhite"
+                    android:text="启动"
+                    android:background="@drawable/one_key_test_start_background"
+                    android:layout_width="180px"
+                    android:layout_height="72px" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/oneKeybuttonRl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45px"
+                android:layout_width="330px"
+                android:layout_height="330px">
+                <io.netopen.hotbitmapgg.library.view.RingProgressBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:max="100"
+                    app:textIsShow="false"
+                    app:ringProgressColor="@color/ThemeColor"
+                    app:ringWidth="10px"
+                    app:ringColor="@color/smallBlue"
+                    android:layout_width="330px"
+                    android:layout_height="330px" />
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:text="正在检测：\n握手阶段"
+                    android:textSize="36px"
+                    android:textColor="@color/textColor666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:background="@color/smallBlue"
+        android:layout_marginTop="54px"
+        android:layout_width="match_parent"
+        android:layout_height="10px"/>
+    <TextView
+        android:text="等待充电桩响应： a.等待故障信号发出..."
+        android:layout_marginLeft="105px"
+        android:layout_marginTop="75px"
+        android:textSize="@dimen/textSize44Px"
+        android:textColor="@color/color666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="故障模拟： 09.36.15发生XX故障"
+        android:layout_marginLeft="105px"
+        android:layout_marginTop="54px"
+        android:textSize="@dimen/textSize44Px"
+        android:textColor="@color/color666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

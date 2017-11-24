@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tiangong.chargingPile.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="315px"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/oneKeyTestRl"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:layout_marginLeft="420px"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground">
+            <ImageView
+                android:id="@+id/img_onKeyTest"
+                android:layout_width="138px"
+                android:layout_height="138px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginTop="18px"
+                android:background="@mipmap/one_key_test" />
+            <TextView
+                android:id="@+id/onKeyTestTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_onKeyTest"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="9px"
+                android:layout_marginTop="27px"
+                android:text="一键检测"
+                android:textColor="@color/textColor666"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/faultSimulationRl"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:layout_marginLeft="240px"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/img_fault_simulation"
+                android:layout_width="138px"
+                android:layout_height="138px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginTop="18px"
+                android:background="@mipmap/fault_simulation" />
+
+            <TextView
+                android:id="@+id/faultSimulationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_fault_simulation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="9px"
+                android:layout_marginTop="27px"
+                android:text="故障模拟"
+                android:textColor="@color/textColor666"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dataManagerRl"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:layout_marginLeft="240px"
+            android:layout_marginRight="420dp"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/img_data_manager"
+                android:layout_width="138px"
+                android:layout_height="138px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginTop="18px"
+                android:background="@mipmap/data_manage" />
+
+            <TextView
+                android:id="@+id/dataManagerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_data_manager"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="9px"
+                android:layout_marginTop="27px"
+                android:text="数据管理"
+                android:textColor="@color/textColor666"
+                android:textSize="30px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168px"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/dataOutputRl"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:layout_marginLeft="420px"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/data_output"
+                android:layout_width="138px"
+                android:layout_height="138px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginTop="18px"
+                android:background="@mipmap/data_output" />
+
+            <TextView
+                android:id="@+id/dataOutputText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/data_output"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="9px"
+                android:layout_marginTop="27px"
+                android:text="数据导出"
+                android:textColor="@color/textColor666"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SystemSettingRl"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:layout_marginLeft="240px"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/system_setting"
+                android:layout_width="138px"
+                android:layout_height="138px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginTop="18px"
+                android:background="@mipmap/system_setting" />
+
+            <TextView
+                android:id="@+id/SystemSettingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/system_setting"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="9px"
+                android:layout_marginTop="27px"
+                android:text="系统设置"
+                android:textColor="@color/textColor666"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/paramaterSettingRl"
+            android:layout_width="180px"
+            android:layout_height="240px"
+            android:layout_marginLeft="240px"
+            android:layout_marginRight="420dp"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/paramater_setting"
+                android:layout_width="138px"
+                android:layout_height="138px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginTop="18px"
+                android:background="@mipmap/paramater_setting" />
+
+            <TextView
+                android:id="@+id/paramaterSettingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paramater_setting"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="9px"
+                android:layout_marginTop="27px"
+                android:text="参数设置"
+                android:textColor="@color/textColor666"
+                android:textSize="30px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

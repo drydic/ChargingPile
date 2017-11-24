@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tiangong.chargingPile.activity.LoginActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_marginTop="315px"
+        android:textSize="72px"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color666"
+        android:text="欢迎您使用XX智能充电桩检测仪"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_marginTop="144px"
+        android:layout_below="@+id/text_name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="918px"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_number"
+            android:layout_centerVertical="true"
+            android:text="员工号码:"
+            android:textSize="54px"
+            android:textColor="@color/color666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/employeeID"
+            android:textColor="@color/color666"
+            android:textSize="44px"
+            android:layout_marginLeft="27px"
+            android:layout_toRightOf="@+id/text_number"
+            android:layout_width="match_parent"
+            android:layout_height="69px" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_marginTop="102px"
+        android:layout_below="@+id/r1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="918px"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/chaegingPile_ID"
+            android:layout_centerVertical="true"
+            android:text="充电桩ID:"
+            android:textSize="54px"
+            android:textColor="@color/color666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/chargID"
+            android:textColor="@color/color666"
+            android:textSize="44px"
+            android:layout_marginLeft="27px"
+            android:layout_toRightOf="@+id/chaegingPile_ID"
+            android:layout_width="match_parent"
+            android:layout_height="69px" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="120px"
+        android:layout_marginRight="435px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/r2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="90px">
+        <Button
+            android:id="@+id/login_jump"
+            android:textColor="@color/color666"
+            android:textSize="@dimen/textSize36Px"
+            android:text="跳过"
+            android:background="@drawable/button_gray"
+            android:layout_width="180px"
+            android:layout_height="72px" />
+        <Button
+            android:id="@+id/login_ensure"
+            android:layout_marginLeft="54px"
+            android:textSize="@dimen/textSize36Px"
+            android:textColor="@color/colorWhite"
+            android:text="确认"
+            android:background="@drawable/one_key_test_start_background"
+            android:layout_width="180px"
+            android:layout_height="72px" />
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

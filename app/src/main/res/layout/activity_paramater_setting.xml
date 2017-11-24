@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.tiangong.chargingPile.activity.ParamaterSettingActivity">
+    <RelativeLayout
+        android:background="@color/ThemeColor"
+        android:layout_width="match_parent"
+        android:layout_height="117px">
+        <ImageView
+            android:padding="24px"
+            android:id="@+id/img_back"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_white"
+            android:layout_marginLeft="54px"
+            android:layout_width="117px"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:text="参数配置"
+            android:layout_centerInParent="true"
+            android:textSize="54px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_marginRight="495px"
+        android:layout_marginLeft="495px"
+        android:layout_marginTop="315px"
+        android:layout_width="match_parent"
+        android:layout_height="533px">
+        <LinearLayout
+            android:id="@+id/l1"
+            android:orientation="vertical"
+            android:background="@color/ThemeColor"
+            android:layout_width="465px"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="18px"
+                android:layout_marginTop="39px"
+                android:text="充电电压阶段一"
+                style="@style/text_36px_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="18px"
+                android:layout_marginTop="54px"
+                android:text="充电电压阶段二"
+                style="@style/text_36px_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="18px"
+                android:layout_marginTop="54px"
+                android:text="充电电压阶段二"
+                style="@style/text_36px_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="18px"
+                android:layout_marginTop="54px"
+                android:text="测试时间"
+                style="@style/text_36px_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="18px"
+                android:layout_marginTop="54px"
+                android:text="使用内置电阻"
+                style="@style/text_36px_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toRightOf="@+id/l1"
+            android:orientation="vertical"
+            android:background="@color/smallBlue"
+            android:layout_width="465px"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/color666"
+                android:layout_marginLeft="18px"
+                android:layout_marginTop="39px"
+                android:text="400V"
+                style="@style/text_36px_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/color666"
+                android:layout_marginLeft="18px"
+                android:layout_marginTop="54px"
+                android:text="420"
+                style="@style/text_36px_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/color666"
+                android:layout_marginLeft="18px"
+                android:layout_marginTop="54px"
+                android:text="450v"
+                style="@style/text_36px_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/color666"
+                android:layout_marginLeft="18px"
+                android:layout_marginTop="54px"
+                android:text="1min"
+                style="@style/text_36px_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+
+                android:button="@drawable/checkbox_selector"
+                android:layout_marginLeft="18px"
+                android:layout_marginTop="54px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="82px"
+        android:layout_marginRight="435px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/r1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="90px">
+        <Button
+            android:textColor="@color/color666"
+            android:textSize="@dimen/textSize36Px"
+            android:text="重置"
+            android:background="@drawable/button_gray"
+            android:layout_width="180px"
+            android:layout_height="72px" />
+        <Button
+            android:layout_marginLeft="54px"
+            android:textSize="@dimen/textSize36Px"
+            android:textColor="@color/colorWhite"
+            android:text="确认"
+            android:background="@drawable/one_key_test_start_background"
+            android:layout_width="180px"
+            android:layout_height="72px" />
+    </LinearLayout>
+</RelativeLayout>

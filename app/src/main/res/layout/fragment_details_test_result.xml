@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="chargingPileMode"
+            type="com.tiangong.chargingPile.model.ChargingPaileData"/>
+    </data>
+
+<ScrollView
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/smallBlue"
+            android:orientation="horizontal"
+            android:layout_marginTop="96px"
+            android:layout_width="match_parent"
+            android:layout_height="332px">
+            <View
+                android:layout_marginTop="152px"
+                android:background="@color/colorCCC"
+                android:layout_width="match_parent"
+                android:layout_height="6px"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_marginLeft="144px"
+                    android:layout_width="156px"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/rectangle_icon1"
+                        android:layout_marginTop="144px"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/details_test_result_rectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/color999"
+                        android:layout_marginBottom="51px"
+                        android:layout_alignBottom="@id/rectangle_icon1"
+                        android:textSize="@dimen/textSize36Px"
+                        android:text="充电枪插入"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/time1"
+                        android:layout_marginTop="21px"
+                        android:text="@{chargingPileMode.chargingLinkTime}"
+                        android:textColor="@color/color999"
+                        android:gravity="center"
+                        android:layout_below="@id/rectangle_icon1"
+                        android:textSize="@dimen/textSize36Px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:background="@mipmap/pass"
+                        android:layout_marginTop="36px"
+                        android:layout_below="@+id/time1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="54px"
+                        android:layout_height="54px" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="90px"
+                    android:layout_width="156px"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/rectangle_icon2"
+                        android:layout_marginTop="144px"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/details_test_result_rectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/color999"
+                        android:layout_marginBottom="51px"
+                        android:layout_alignBottom="@id/rectangle_icon2"
+                        android:textSize="@dimen/textSize36Px"
+                        android:text="开始检测"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/time2"
+                        android:layout_marginTop="21px"
+                        android:text="@{chargingPileMode.startTestTime}"
+                        android:textColor="@color/color999"
+                        android:gravity="center"
+                        android:layout_below="@id/rectangle_icon2"
+                        android:textSize="@dimen/textSize36Px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:background="@mipmap/pass"
+                        android:layout_marginTop="36px"
+                        android:layout_below="@+id/time2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="54px"
+                        android:layout_height="54px" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="90px"
+                    android:layout_width="156px"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/rectangle_icon3"
+                        android:layout_marginTop="144px"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/details_test_result_rectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/color999"
+                        android:layout_marginBottom="51px"
+                        android:layout_alignBottom="@id/rectangle_icon3"
+                        android:textSize="@dimen/textSize36Px"
+                        android:text="握手阶段"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/time3"
+                        android:layout_marginTop="21px"
+                        android:text="@{chargingPileMode.handTime}"
+                        android:textColor="@color/color999"
+                        android:gravity="center"
+                        android:layout_below="@id/rectangle_icon3"
+                        android:textSize="@dimen/textSize36Px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:background="@mipmap/pass"
+                        android:layout_marginTop="36px"
+                        android:layout_below="@+id/time3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="54px"
+                        android:layout_height="54px" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="90px"
+                    android:layout_width="156px"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/rectangle_icon4"
+                        android:layout_marginTop="144px"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/details_test_result_rectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/color999"
+                        android:layout_marginBottom="51px"
+                        android:layout_alignBottom="@id/rectangle_icon4"
+                        android:textSize="@dimen/textSize36Px"
+                        android:text="配置阶段"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/time4"
+                        android:layout_marginTop="21px"
+                        android:text="@{chargingPileMode.configTime}"
+                        android:textColor="@color/color999"
+                        android:gravity="center"
+                        android:layout_below="@id/rectangle_icon4"
+                        android:textSize="@dimen/textSize36Px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:background="@mipmap/pass"
+                        android:layout_marginTop="36px"
+                        android:layout_below="@+id/time4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="54px"
+                        android:layout_height="54px" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="90px"
+                    android:layout_width="156px"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/rectangle_icon5"
+                        android:layout_marginTop="144px"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/details_test_result_rectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/color999"
+                        android:layout_marginBottom="51px"
+                        android:layout_alignBottom="@id/rectangle_icon5"
+                        android:textSize="@dimen/textSize36Px"
+                        android:text="充电阶段"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/time5"
+                        android:layout_marginTop="21px"
+                        android:text="@{chargingPileMode.chargTime}"
+                        android:textColor="@color/color999"
+                        android:gravity="center"
+                        android:layout_below="@id/rectangle_icon5"
+                        android:textSize="@dimen/textSize36Px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:background="@mipmap/pass"
+                        android:layout_marginTop="36px"
+                        android:layout_below="@+id/time5"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="54px"
+                        android:layout_height="54px" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="90px"
+                    android:layout_width="156px"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/rectangle_icon6"
+                        android:layout_marginTop="144px"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/details_test_result_rectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/color999"
+                        android:layout_marginBottom="51px"
+                        android:layout_alignBottom="@id/rectangle_icon6"
+                        android:textSize="@dimen/textSize36Px"
+                        android:text="结束阶段"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/time6"
+                        android:layout_marginTop="21px"
+                        android:text="@{chargingPileMode.endCharg}"
+                        android:textColor="@color/color999"
+                        android:gravity="center"
+                        android:layout_below="@id/rectangle_icon6"
+                        android:textSize="@dimen/textSize36Px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:background="@mipmap/pass"
+                        android:layout_marginTop="36px"
+                        android:layout_below="@+id/time6"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="54px"
+                        android:layout_height="54px" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="90px"
+                    android:layout_width="156px"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/rectangle_icon7"
+                        android:layout_marginTop="144px"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/details_test_result_rectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/color999"
+                        android:layout_marginBottom="51px"
+                        android:layout_alignBottom="@id/rectangle_icon7"
+                        android:textSize="@dimen/textSize36Px"
+                        android:text="检测结束"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/time7"
+                        android:layout_marginTop="21px"
+                        android:text="@{chargingPileMode.stopTime}"
+                        android:textColor="@color/color999"
+                        android:gravity="center"
+                        android:layout_below="@id/rectangle_icon7"
+                        android:textSize="@dimen/textSize36Px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:background="@mipmap/pass"
+                        android:layout_marginTop="36px"
+                        android:layout_below="@+id/time7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="54px"
+                        android:layout_height="54px" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="48px"
+            android:orientation="vertical"
+            android:layout_width="1164px"
+            android:layout_height="600px">
+            <com.github.mikephil.charting.charts.LineChart
+                android:background="#101419"
+                android:id="@+id/voltageLineChart"
+                android:layout_marginLeft="45px"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.github.mikephil.charting.charts.LineChart>
+            <com.github.mikephil.charting.charts.LineChart
+                android:background="#101419"
+                android:id="@+id/electrcityLineChart"
+                android:layout_marginLeft="45px"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.github.mikephil.charting.charts.LineChart>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/colorCCC"
+            android:layout_marginBottom="39px"
+            android:layout_marginRight="45px"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="36px"
+            android:layout_width="match_parent"
+            android:layout_height="398px">
+            <LinearLayout
+                android:background="@color/ThemeColor"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/colorCCC"
+                        android:text="电压"
+                        android:textSize="@dimen/textSize36Px"
+                        android:layout_marginTop="39px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:background="@color/smallBlue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/bowen"
+                        android:layout_centerHorizontal="true"
+                        android:text="理论值"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_below="@+id/bowen"
+                        android:layout_centerHorizontal="true"
+                        android:text="300.0V"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/smallBlue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/lilunValues"
+                        android:layout_centerHorizontal="true"
+                        android:text="实测值"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_below="@+id/lilunValues"
+                        android:layout_centerHorizontal="true"
+                        android:text="@{chargingPileMode.voltageMeasure+'V'}"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/smallBlue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/wuchaValus"
+                        android:layout_centerHorizontal="true"
+                        android:text="误差"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_below="@+id/wuchaValus"
+                        android:layout_centerHorizontal="true"
+                        android:text="@{chargingPileMode.voltageError+'%'}"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:background="@color/smallBlue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/shice"
+                        android:layout_centerHorizontal="true"
+                        android:text="波纹"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_below="@+id/shice"
+                        android:layout_centerHorizontal="true"
+                        android:text="@{chargingPileMode.voltageRipple}"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/smallBlue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/jieguo"
+                        android:layout_centerHorizontal="true"
+                        android:text="结果"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_below="@+id/jieguo"
+                        android:layout_centerHorizontal="true"
+                        android:text="符合"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/ThemeColor"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorCCC"
+                    android:text="电流"
+                    android:textSize="@dimen/textSize36Px"
+                    android:layout_marginTop="39px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:background="@color/smallBlue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/ebowen"
+                        android:layout_centerHorizontal="true"
+                        android:text="实测值"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_below="@+id/ebowen"
+                        android:layout_centerHorizontal="true"
+                        android:text="3.0A"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/smallBlue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/elilunValues"
+                        android:layout_centerHorizontal="true"
+                        android:text="实测值"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_below="@+id/elilunValues"
+                        android:layout_centerHorizontal="true"
+                        android:text="@{chargingPileMode.electrcityMeasure+'A'}"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/smallBlue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/ewuchaValus"
+                        android:layout_centerHorizontal="true"
+                        android:text="误差"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_below="@+id/ewuchaValus"
+                        android:layout_centerHorizontal="true"
+                        android:text="@{chargingPileMode.electrcityError+'%'}"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:background="@color/smallBlue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/eshice"
+                        android:layout_centerHorizontal="true"
+                        android:text="波纹"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_below="@+id/eshice"
+                        android:layout_centerHorizontal="true"
+                        android:text="@{chargingPileMode.electrcityRipple}"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/smallBlue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/ejieguo"
+                        android:layout_centerHorizontal="true"
+                        android:text="结果"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="39px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_below="@+id/ejieguo"
+                        android:layout_centerHorizontal="true"
+                        android:text="符合"
+                        android:textSize="@dimen/textSize36Px"
+                        android:textColor="@color/color666"
+                        android:layout_marginTop="54px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+</layout>

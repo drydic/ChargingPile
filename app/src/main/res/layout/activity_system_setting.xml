@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tiangong.chargingPile.activity.SystemSettingActivity">
+
+    <RelativeLayout
+        android:background="@color/ThemeColor"
+        android:layout_width="match_parent"
+        android:layout_height="117px">
+        <ImageView
+            android:padding="24px"
+            android:id="@+id/img_back"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_white"
+            android:layout_marginLeft="54px"
+            android:layout_width="117px"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:text="系统设置"
+            android:layout_centerInParent="true"
+            android:textSize="54px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="333px"
+        android:layout_width="1572px"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="1572px"
+            android:layout_height="90px">
+            <ImageView
+                android:id="@+id/img_light_icon"
+                android:background="@mipmap/light_icon"
+                android:layout_width="90px"
+                android:layout_height="90px" />
+
+            <TextView
+                android:id="@+id/light_tv"
+                android:layout_toRightOf="@+id/img_light_icon"
+                android:layout_marginLeft="36px"
+                android:text="屏幕亮度"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/textSize44Px"
+                android:textColor="@color/color666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_marginLeft="60px"
+                android:layout_toRightOf="@+id/light_tv"
+                android:layout_centerVertical="true"
+                android:layout_width="1206px"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_below="@+id/r1"
+            android:layout_marginTop="39px"
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+            <ImageView
+                android:id="@+id/img_wifi_icon"
+                android:background="@mipmap/wifi_icon"
+                android:layout_width="90px"
+                android:layout_height="90px" />
+            <TextView
+                android:id="@+id/wifi_tv"
+                android:layout_toRightOf="@+id/img_wifi_icon"
+                android:layout_marginLeft="36px"
+                android:text="Wifi连接"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/textSize44Px"
+                android:textColor="@color/color666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:background="@mipmap/more_icon"
+                android:layout_alignParentRight="true"
+                android:layout_width="54px"
+                android:layout_height="54px" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_marginTop="39px"
+            android:layout_below="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+            <TextView
+                android:id="@+id/company_message"
+                android:layout_marginLeft="126px"
+                android:text="生产厂家信息"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/textSize44Px"
+                android:textColor="@color/color666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:background="@mipmap/more_icon"
+                android:layout_alignParentRight="true"
+                android:layout_width="54px"
+                android:layout_height="54px" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r4"
+            android:layout_marginTop="39px"
+            android:layout_below="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+            <TextView
+                android:layout_marginLeft="126px"
+                android:text="当前固件版本"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/textSize44Px"
+                android:textColor="@color/color666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/more"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/more_icon"
+                android:layout_alignParentRight="true"
+                android:layout_width="54px"
+                android:layout_height="54px" />
+            <TextView
+                android:layout_marginRight="15px"
+                android:text="1.06"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/more"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="39px"
+            android:layout_below="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+            <TextView
+                android:layout_marginLeft="126px"
+                android:text="系统内存容量"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/textSize44Px"
+                android:textColor="@color/color666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:background="@mipmap/more_icon"
+                android:layout_alignParentRight="true"
+                android:layout_width="54px"
+                android:layout_height="54px" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

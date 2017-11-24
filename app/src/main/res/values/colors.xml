@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor666">#666</color>
+    <color name="ThemeColor">#01a796</color>
+    <color name="colorWhite">#fff</color>
+    <color name="color666">#666666</color>
+    <color name="colorOrange">#ff8484</color>
+    <color name="colorCCC">#ccc</color>
+    <color name="color999">#999</color>
+    <color name="smallBlue">#e7f2f0</color>
+    <color name="minute_grayLine">#2D3945</color>
+    <color name="minute_zhoutv">#858D93</color>
+</resources>
