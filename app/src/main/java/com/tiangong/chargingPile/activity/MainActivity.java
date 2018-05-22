@@ -282,7 +282,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 String msg = "硬件故障，请重新连接";
                 while (deviceIterator.hasNext()) {
                     UsbDevice usbDevice = deviceIterator.next();
-                    if (usbDevice.getVendorId() == 1155) {
+                    if (usbDevice.getVendorId() == 232) {
                         startActivity(new Intent(this,LoginActivity.class));
                         msg = "设备连接成功";
                         break;

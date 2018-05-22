@@ -387,7 +387,9 @@ public class OneKeyTestActivity extends BaseActivity implements View.OnClickList
 
         while (deviceIterator.hasNext()) {
             UsbDevice usbDevice = deviceIterator.next();
-            if (usbDevice.getVendorId() == 1155) {
+
+            // TODO: 2018/1/15   设备的vendorId 可能需要修改 -- 232
+            if (usbDevice.getVendorId() == 232) {
                 mUsbDevice = usbDevice;
                 break;
             }
@@ -517,7 +519,7 @@ public class OneKeyTestActivity extends BaseActivity implements View.OnClickList
 //                ChargingPaileData.getInstance().setEnd(false);
                 break;
             case R.id.oneKey_test_start:
-                if (mUsbDevice != null && mUsbDevice.getVendorId() == 1155) {
+                if (mUsbDevice != null && mUsbDevice.getVendorId() == 232) {
                     //标识 开始 接受数据 渲染页面
                     isReceiveMsg = true;
                     //用户点击启动按钮显示 状态检测中
@@ -546,7 +548,7 @@ public class OneKeyTestActivity extends BaseActivity implements View.OnClickList
                 } else {
                     //未获得单片机USB对象，则先获取单片机USB 接口再进行读取数据
                     initUsbData();
-                    if (mUsbDevice != null && mUsbDevice.getVendorId() == 1155) {
+                    if (mUsbDevice != null && mUsbDevice.getVendorId() == 232) {
 
                     }
                 }
